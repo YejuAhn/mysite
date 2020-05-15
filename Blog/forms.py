@@ -49,10 +49,8 @@ class ArticleForm(forms.ModelForm):
         if "https:" not in cur_url:
             raise forms.ValidationError("This is not a valid url")
 
-
     def clean_pub_date(self, *args, **kwargs):
         date = self.cleaned_data.get("date")
-        print(date)
         return date
 
 

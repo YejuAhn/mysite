@@ -3,12 +3,14 @@ from django.urls import path
 
 app_name = 'Blog'
 
-from .views import(
-    article_detail_view,
+from .views import (
+    dynamic_lookup_view,
+    article_list_view
 )
 
 urlpatterns = [
-    path('', article_detail_view, name = 'article-detail')
+    path('<int:id>/', dynamic_lookup_view, name='article-detail'),
+    path('', article_list_view, name = 'article-list'),
 ]
 
 

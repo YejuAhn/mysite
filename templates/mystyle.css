@@ -1,0 +1,24 @@
+h1 {
+    font-family: courier;
+    color: blue;
+  font-size: 300%;
+}
+h2 {
+  font-family: courier;
+  font-size: 200%;
+}
+h3 {
+  font-family: courier;
+  font-size: 100%;
+}
+p {
+  font-family: courier;
+  border: 1px solid powderblue;
+  padding: 30px;
+}
+ul{
+  border: 1px solid powderblue;
+}
+li {
+  font-family: courier;
+}

@@ -5,16 +5,19 @@
     <title>Esther's try django</title>
 </head>
 <body>
-    <h1>Navigation Bar</h1>
+    <h2>Navigation Bar</h2>
 
     {% include 'navbar.html' %}
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'Blog/style.css' %}">
 
     {% block content %}
         replace me
     {% endblock %}
 
-       {% block another %}
-        replace me
+   {% block another %}
+       replace me
     {% endblock %}
 
 </body>

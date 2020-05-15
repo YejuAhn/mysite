@@ -2,32 +2,21 @@
 
 {% block content %}
     <h1>About me</h1>
-    <p>My name is Esther.</p>
+    <h2>My name is Esther.</h2>
 
-    <p>
-    {{my_text}}, {{ my_number }}
-    {{ my_list }}
+    <p> I am a student at Carnegie Mellon University, studying Statistics and Machine Learning, Software Engineering. I was
+    born in Seoul, South Korea. I came to the United States in 2013 as a freshman in High School and have been
+    studying in the US ever since then. During my free time, I like to spend time with my family and my friends.
+    I also enjoy watching movies, reading blogs about new technology, and representing my home country South Korea.&#128512;
     </p>
 
+    <h3> Facts about me</h3>
     <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
+      <li style="list-style-type:square">Female</li>
+      <li style="list-style-type:square">23 Years old</li>
+      <li style="list-style-type:square">Born in 1998.01.29</li>
+      <li style="list-style-type:square">Student</li>
+      <li style="list-style-type:square">Favorite season : Spring</li>
+      <li style="list-style-type:square">Favorite cuisine : Italian Pizza</li>
     </ul>
-
-    <ul>
-    {% for abc in my_list %}
-        {% if abc == 312 %}
-            <li> {{ forloop.counter }} - {{ abc|add:22 }}</li>
-        {% elif abc ==  "Abc"%}
-            <li>This is not a number</li>
-        {% else %}
-            <li> {{ forloop.counter }} - {{ abc }}</li>
-        {% endif %}
-    {% endfor %}
-    </ul>
-
-{% endblock %}
-
-{% block another %}
-    <h2>Hello.</h2>
 {% endblock %}

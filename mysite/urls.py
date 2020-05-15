@@ -27,6 +27,7 @@ urlpatterns = [
     path('create/', product_create_view),
     path('product/', product_detail_view) ,
     path('products/', include('products.urls')),
-    path('Blog/', include('Blog.urls'))
+    path('Blog/', include('Blog.urls')),
+    path('polls/', include('polls.urls')),
 ]
 

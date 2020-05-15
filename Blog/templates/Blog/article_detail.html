@@ -1,11 +1,11 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1> In App template: {{ object.title }} </h1>
+    <h1>{{ object.title }} </h1>
     <h2>{% if object.description != None and object.description != ''%} {{ object.description }}{% endif %}</h2>
     <h3>{% if object.author != None and object.author != '' %} {{ object.author }} {% endif %}</h3>
     <p>{% if object.text != None and object.text != '' %} {{ object.text }} {% endif %}</p>
-    <p></p>
+    <li> <a href = '{{ object.get_absolute_url }}'>{{ object.title}}</a> </li>
 {% endblock %}
 
 
