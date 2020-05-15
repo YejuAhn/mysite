@@ -13,7 +13,7 @@ from .views import(
 )
 
 urlpatterns = [
-    path('products/<int:id>/', dynamic_lookup_view, name = 'product-detail'),
-    path('products/', product_list_view, name = 'product-list')
+    path('<int:id>/', dynamic_lookup_view, name = 'product-detail'),
+    path('', product_list_view, name = 'product-list')
 ]
 

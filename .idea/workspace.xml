@@ -2,25 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b16b0dc8-7d4d-4cb2-b90c-4d1cfea7ca30" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/templates/products/product_create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/templates/products/product_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/templates/products/product_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/contact.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/navbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/social.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/templates/Blog/article_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/templates/Blog/article_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db 2.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/templates/products/product_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/products/templates/products/product_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -104,7 +95,7 @@
       <updated>1589295227001</updated>
       <workItem from="1589295230642" duration="1530000" />
       <workItem from="1589304970094" duration="47000" />
-      <workItem from="1589350076348" duration="37204000" />
+      <workItem from="1589350076348" duration="43774000" />
     </task>
     <servers />
   </component>
