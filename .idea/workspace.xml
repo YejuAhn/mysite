@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b16b0dc8-7d4d-4cb2-b90c-4d1cfea7ca30" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Blog/serializer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Blog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blog/templates/Blog/article_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/Blog/templates/Blog/article_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blog/templates/Blog/article_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Blog/templates/Blog/article_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +17,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Python Script" />
         <option value="CSS File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -98,7 +97,7 @@
       <workItem from="1589295230642" duration="1530000" />
       <workItem from="1589304970094" duration="47000" />
       <workItem from="1589350076348" duration="43774000" />
-      <workItem from="1589504250962" duration="22244000" />
+      <workItem from="1589504250962" duration="23647000" />
     </task>
     <servers />
   </component>

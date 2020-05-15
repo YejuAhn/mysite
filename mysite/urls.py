@@ -13,6 +13,7 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django.conf.urls import url
 from django.contrib import admin
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.urls import include, path
@@ -33,6 +34,8 @@ urlpatterns = [
     path('products/', include('products.urls')),
     path('Blog/', include('Blog.urls')),
     path('polls/', include('polls.urls')),
+    url(r'^api-auth/', include('rest_framework.urls'))
+
 ]
 
 urlpatterns += staticfiles_urlpatterns()
