@@ -2,20 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b16b0dc8-7d4d-4cb2-b90c-4d1cfea7ca30" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/corsheaders/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/corsheaders/checks.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/corsheaders/conf.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/corsheaders/defaults.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/corsheaders/middleware.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/corsheaders/signals.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/django_cors_headers-3.2.1.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/django_cors_headers-3.2.1.dist-info/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/django_cors_headers-3.2.1.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/django_cors_headers-3.2.1.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/django_cors_headers-3.2.1.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/django_cors_headers-3.2.1.dist-info/top_level.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blog/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Blog/serializer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -108,7 +94,7 @@
       <workItem from="1589295230642" duration="1530000" />
       <workItem from="1589304970094" duration="47000" />
       <workItem from="1589350076348" duration="43774000" />
-      <workItem from="1589504250962" duration="24394000" />
+      <workItem from="1589504250962" duration="24432000" />
     </task>
     <servers />
   </component>
