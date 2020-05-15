@@ -8,6 +8,8 @@ class Product(models.Model):
     price = models.DecimalField(decimal_places=2, max_digits=10000)
     summary = models.TextField(blank = False, null = False)
     featured = models.BooleanField(default=True) #null = True, default
+    image = models.ImageField(upload_to = 'gallery', default='gallery/FitSimplify.jpg')
+    url = models.URLField(default= "https://www.google.com/")
 
     def get_absolute_url(self):
         return reverse("products:product-detail", kwargs ={"id":self.id})

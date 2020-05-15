@@ -54,3 +54,4 @@ class RawProductForm(forms.Form):
                                                                             }))
     price = forms.DecimalField(initial= 199.99)
 
+

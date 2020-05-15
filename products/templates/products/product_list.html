@@ -2,7 +2,7 @@
 
 {% block content %}
     <h1> Products</h1>
-    <h2> Click the Products below to find more about the products!</h2>
+    <h2> Click the items below to find more about the products!</h2>
     <ul>
     {% for instance in object_list %}
         <li><a href = '{{ instance.get_absolute_url }}'>{{ instance.title}}</a></li>

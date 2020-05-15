@@ -10,6 +10,8 @@
     <h2> Price: {{ object.price }}</h2>
     <p> {% if object.summary != None and object.summary != '' %}  {{object.summary}} {% endif %}</p>
    <h2> Featured: {{ object.featured }}</h2>
+    <img src="{{ MEDIA_URL }}{{ object.image.url}}"  alt="image"/>
+    <h2>Link to site: <a href="{{ object.url }}">Amazon.com</a></h2>
    {% endblock %}
 
 
