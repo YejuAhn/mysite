@@ -8,6 +8,7 @@ class Article(models.Model):
     author = models.CharField(max_length = 30)
     text = models.TextField(blank = True, null = True)
     pub_date = models.DateTimeField('date published')
+    image = models.ImageField(upload_to = 'gallery', default='gallery/FitSimplify.jpg')
 
     def get_absolute_url(self):
         return reverse("Blog:article-detail", kwargs={"id": self.id})
