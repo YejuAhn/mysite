@@ -34,7 +34,7 @@ urlpatterns = [
     path('products/', include('products.urls')),
     path('Blog/', include('Blog.urls')),
     path('polls/', include('polls.urls')),
-    url(r'^api-auth/', include('rest_framework.urls'))
+    # url(r'^api-auth/', include('rest_framework.urls'))
 
 ]
 

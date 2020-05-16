@@ -1,5 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Article
+from rest_framework import viewsets  # add this
+
 
 # def article_detail_view(request):
 #     obj = Article.objects.get(id=1)
