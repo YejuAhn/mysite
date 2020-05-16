@@ -16,28 +16,33 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
-from django.urls import include, path
+from django.urls import include, path, re_path
 
 from mysite import settings
-from pages.views import home_view, contact_view, about_view, social_view
+# from pages.views import home_view, contact_view, about_view, social_view
+from pages.views import FrontendRenderView
 from products.views import product_detail_view, product_create_view
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('', home_view, name = 'home'),
-    path('contact/', contact_view),
-    path('about/', about_view),
-    path('social/', social_view),
-    path('admin/', admin.site.urls),
-    path('create/', product_create_view),
-    path('product/', product_detail_view) ,
-    path('products/', include('products.urls')),
-    path('Blog/', include('Blog.urls')),
-    path('polls/', include('polls.urls')),
-    # url(r'^api-auth/', include('rest_framework.urls'))
-
+    # path('', home_view, name = 'home'),
+    # path('contact/', contact_view),
+    # path('about/', about_view),
+    # path('social/', social_view),
+    # path('admin/', admin.site.urls),
+    # path('create/', product_create_view),
+    # path('product/', product_detail_view) ,
+    # path('products/', include('products.urls')),
+    # path('Blog/', include('Blog.urls')),
+    # path('polls/', include('polls.urls')),
+    re_path(r'^admin/', admin.site.urls),
+    re_path(r'^api/products/', include("products.api.urls")),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
+urlpatterns += [
+    # your integrate path
+    re_path(r'(?P<path>.*)', FrontendRenderView.as_view(), name='home')
+]
