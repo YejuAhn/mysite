@@ -14,6 +14,7 @@ class ProductList extends React.Component {
             this.setState({
                 products: res.data
             });
+            console.log(res.data)
         });
     }
 
