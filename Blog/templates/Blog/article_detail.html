@@ -3,7 +3,6 @@
 {% block content %}
     <h1>{{ object.title }} </h1>
     <img src="{{ MEDIA_URL }}{{ object.image.url}}"  alt="image"/>
-
     <h2>{% if object.description != None and object.description != ''%} {{ object.description }}{% endif %}</h2>
     <h3>{% if object.author != None and object.author != '' %} {{ object.author }} {% endif %}</h3>
     <p>{% if object.text != None and object.text != '' %} {{ object.text }} {% endif %}</p>

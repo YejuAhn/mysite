@@ -1,5 +1,5 @@
 import React from 'react';
-import { List, Avatar } from "antd";
+import {List, Avatar, Card} from "antd";
 import { SmileOutlined } from '@ant-design/icons';
 
 
@@ -23,11 +23,13 @@ const Products = props => {
                         <SmileOutlined type="like-o" text="156" />,
                         <SmileOutlined type="message" text="2" />
                     ]}
-                    extra={
+                    
+                extra={
                         <img
                             width={272}
                             alt="logo"
-                            src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png"
+                            // src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png"
+                            src = {item.image}
                         />
                     }
                 >
@@ -36,7 +38,7 @@ const Products = props => {
                         title={<a href={`/${item.id}/`}> {item.title} </a>}
                         description={item.description}
                     />
-                    {item.content}
+                    {item.price}
                 </List.Item>
             )}
         />
