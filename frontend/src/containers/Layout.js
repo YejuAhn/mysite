@@ -5,7 +5,6 @@ const { Header, Content, Footer } = Layout;
 
 const CustomLayout = (props) => {
     return (
-
         <Layout className="layout">
             <Header>
                 <div className="logo" />
