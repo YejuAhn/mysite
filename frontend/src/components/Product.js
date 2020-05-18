@@ -23,7 +23,7 @@ const Products = props => {
                         <SmileOutlined type="like-o" text="156" />,
                         <SmileOutlined type="message" text="2" />
                     ]}
-                    
+
                 extra={
                         <img
                             width={272}

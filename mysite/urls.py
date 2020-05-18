@@ -37,6 +37,7 @@ urlpatterns = [
     # path('polls/', include('polls.urls')),
     re_path(r'^admin/', admin.site.urls),
     re_path(r'^api/products/', include("products.api.urls")),
+    re_path(r'^api/articles/', include("Blog.api.urls")),
 ]
 
 urlpatterns += staticfiles_urlpatterns()

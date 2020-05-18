@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     #thirdparty
     'rest_framework',
-
     #own
     'products',
     "Blog",

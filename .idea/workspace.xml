@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b16b0dc8-7d4d-4cb2-b90c-4d1cfea7ca30" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Blog/api/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/api/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/api/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blog/templates/Blog/article_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/Blog/templates/Blog/article_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/containers/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/containers/Layout.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/containers/ProductDetailView.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/containers/ProductDetailView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/api/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/templates/pages/front-end-render.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/templates/pages/front-end-render.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/api/serializers.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +28,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -105,12 +110,20 @@
       <workItem from="1589304970094" duration="47000" />
       <workItem from="1589350076348" duration="43774000" />
       <workItem from="1589504250962" duration="34660000" />
-      <workItem from="1589692884523" duration="4897000" />
+      <workItem from="1589692884523" duration="8107000" />
+      <workItem from="1589768467779" duration="6479000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/frontend/node_modules/wait-for-expect/lib/waitForExpect.spec.d 2.js" />
+        <option value="$PROJECT_DIR$/frontend/node_modules/wait-for-expect/lib/index.d 2.js" />
+        <option value="$PROJECT_DIR$/frontend/node_modules/wait-for-expect/lib/toBeInRangeMatcher.d 2.js" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

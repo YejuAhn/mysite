@@ -1,9 +1,6 @@
-import Products from "../components/Product";
 import React from "react";
-import CustomForm from "../components/Form";
 import axios from "axios";
 import {Card} from 'antd';
-import {Link} from 'react-router-dom';
 
 class ProductDetail extends React.Component {
     state = {

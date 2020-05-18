@@ -1,20 +1,14 @@
-{% load static %}
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Custom CSS -->
-    {% comment "Load your css like so" %}
-      <link rel="stylesheet" href="{% static 'css/my/app/app.css' %}">
-    {% endcomment %}
-    <title>Hello, world!</title>
+    <title>Django REST with REACT</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-     <!-- Your FrontEnd JS Code -->
-     {% comment "Below is an example of how you might render your Angular/React/Vue front-end framework code" %}
-        <script src="{% static 'js/my/app/app.js' %}"></script>
-    {% endcomment %}
+  <div id = "app">
+  </div>
   </body>
+  {% load static %}
+    <script src = "{% static "./frontend/src/index.js"%}"></script>
 </html>
