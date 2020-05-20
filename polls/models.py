@@ -1,9 +1,9 @@
 from django.db import models
 from django.utils import timezone
 import datetime
-
-# datetime
+from django.contrib.auth.models import AbstractUser
 class Question(models.Model):
+
     question_text = models.CharField(max_length=200)
     # human-readable name
     pub_date = models.DateTimeField('date published')

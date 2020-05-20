@@ -17,33 +17,40 @@ from django.conf.urls import url
 from django.contrib import admin
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.urls import include, path, re_path
+from django.views.decorators.csrf import csrf_exempt
+from graphene_django.views import GraphQLView
 
 from mysite import settings
-# from pages.views import home_view, contact_view, about_view, social_view
-from pages.views import FrontendRenderView
+from pages.views import home_view, contact_view, about_view, social_view
+# from pages.views import FrontendRenderView
 from products.views import product_detail_view, product_create_view
+from accounts.views import register_page, login_page
 from django.conf.urls.static import static
 
 urlpatterns = [
-    # path('', home_view, name = 'home'),
-    # path('contact/', contact_view),
-    # path('about/', about_view),
-    # path('social/', social_view),
-    # path('admin/', admin.site.urls),
-    # path('create/', product_create_view),
-    # path('product/', product_detail_view) ,
-    # path('products/', include('products.urls')),
-    # path('Blog/', include('Blog.urls')),
-    # path('polls/', include('polls.urls')),
-    re_path(r'^admin/', admin.site.urls),
-    re_path(r'^api/products/', include("products.api.urls")),
-    re_path(r'^api/articles/', include("Blog.api.urls")),
+    path('', home_view, name = 'home'),
+    path('contact/', contact_view),
+    path('about/', about_view),
+    path('social/', social_view),
+    path('admin/', admin.site.urls),
+    path('create/', product_create_view),
+    path('product/', product_detail_view) ,
+    path('products/', include('products.urls')),
+    path('Blog/', include('Blog.urls')),
+    path('polls/', include('polls.urls')),
+    path('register/', register_page),
+    path('login/', login_page),
+    url(r'^admin/', admin.site.urls),
+    url(r'^api/products/', include("products.api.urls")),
+    url(r'^api/articles/', include("Blog.api.urls")),
+    url(r'^api/polls/', include("polls.api.urls")),
+    url(r'^graphql$', csrf_exempt(GraphQLView.as_view(graphiql=True))),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-urlpatterns += [
-    # your integrate path
-    re_path(r'(?P<path>.*)', FrontendRenderView.as_view(), name='home')
-]
+# urlpatterns += [
+#     # your integrate path
+#     re_path(r'(?P<path>.*)', FrontendRenderView.as_view(), name='home')
+# ]

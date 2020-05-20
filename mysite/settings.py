@@ -45,7 +45,11 @@ INSTALLED_APPS = [
     "Blog",
     'pages',
     'corsheaders',
+    'graphene_django',
+    'accounts',
 ]
+
+AUTH_USER_MODEL = 'accounts.User' #changes built-in user model to ours:)s
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -87,6 +91,10 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
+}
+
+GRAPHENE = {
+    'SCHEMA': 'mysite.schema.schema'
 }
 
 
