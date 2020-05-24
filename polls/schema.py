@@ -25,9 +25,7 @@ class ChoiceNode(DjangoObjectType):
         filter_fields = {
             'choice_text': ['exact', 'icontains', 'istartswith'],
         }
-        interfaces = (graphene.relay.Node,)
-
-
+        interfaces = (graphene.relay.Node, )
 
 
 class QuestionInput(graphene.InputObjectType):

@@ -22,13 +22,14 @@ from graphene_django.views import GraphQLView
 
 from mysite import settings
 from pages.views import home_view, contact_view, about_view, social_view
-# from pages.views import FrontendRenderView
 from products.views import product_detail_view, product_create_view
-from accounts.views import register_page, login_page
+from accounts.views import register_page
+# from accounts.views import login_page
 from django.conf.urls.static import static
+from django.views.generic import TemplateView
 
 urlpatterns = [
-    path('', home_view, name = 'home'),
+    path('', TemplateView.as_view(template_name = 'index.html')),
     path('contact/', contact_view),
     path('about/', about_view),
     path('social/', social_view),
@@ -39,7 +40,8 @@ urlpatterns = [
     path('Blog/', include('Blog.urls')),
     path('polls/', include('polls.urls')),
     path('register/', register_page),
-    path('login/', login_page),
+#     path('logout/', logout_page, name = 'auth_logout'),
+#     path('login/', login_page, name = 'auth_login'),
     url(r'^admin/', admin.site.urls),
     url(r'^api/products/', include("products.api.urls")),
     url(r'^api/articles/', include("Blog.api.urls")),
