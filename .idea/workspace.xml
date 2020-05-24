@@ -2,42 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b16b0dc8-7d4d-4cb2-b90c-4d1cfea7ca30" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/accounts/backends.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/schema.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/templates/accounts/logout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blog/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blog/migrations/0002_article_url.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blog/migrations/0003_article_image.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/migrations/0002_auto_20200520_1534.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/templates/accounts/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/templates/accounts/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/schema.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/schema.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/migrations/0002_delete_menu.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/polls/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/polls/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polls/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polls/templates/polls/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/polls/templates/polls/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polls/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/migrations/0002_product_featured.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/migrations/0003_auto_20200513_1704.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/migrations/0004_auto_20200513_1706.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/migrations/0005_auto_20200514_1050.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/migrations/0006_product_image.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/migrations/0007_product_url.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/react.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -122,7 +94,7 @@
       <workItem from="1589768467779" duration="35793000" />
       <workItem from="1589964354022" duration="4831000" />
       <workItem from="1590022296191" duration="32571000" />
-      <workItem from="1590294189797" duration="6125000" />
+      <workItem from="1590294189797" duration="8616000" />
     </task>
     <servers />
   </component>

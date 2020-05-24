@@ -49,7 +49,7 @@ INSTALLED_APPS = [
     'accounts',
 ]
 
-AUTH_USER_MODEL = 'accounts.User' #changes built-in user model to ours:)s
+AUTH_USER_MODEL = 'accounts.User' #changes built-in user model to ours
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -107,7 +107,8 @@ GRAPHENE = {
 
 AUTHENTICATION_BACKENDS = [
     'graphql_jwt.backends.JSONWebTokenBackend',
-    'django.contrib.auth.backends.ModelBackend',
+    'accounts.backends.ModelBackend',
+    # 'django.contrib.auth.backends.ModelBackend',
 ]
 
 

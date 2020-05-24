@@ -9,11 +9,6 @@ from rest_framework.permissions import AllowAny
 from rest_framework.authentication import BaseAuthentication
 from .models import User
 
-# def logout_page(request):
-#     print("loggedout")
-#     logout(request)
-#     return HttpResponseRedirect('/')
-
 def register_page(request):
     form = RegisterForm(request.POST or None)
     context = {
@@ -24,19 +19,18 @@ def register_page(request):
     return render(request, "accounts/register.html", context)
 
 #authenticate user
-# def login_page(request):
-#     form = LoginForm(request.POST or None)
-#     if form.is_valid():
-#         username = form.cleaned_data['username']
-# #         password = form.cleaned_data['full_name']
-#         user = authenticate(username = username, password = password)
-#         login(request, user)
-#         print('logged in')
-#
-#     context = {
-#         "form" : form
-#     }
-#     return render(request, "accounts/login.html", context)
+def login_page(request):
+    form = LoginForm(request.POST or None)
+    if form.is_valid():
+        email = form.cleaned_data['username']
+        full_name = form.cleaned_data['full_name']
+        user = authenticate(email = email, full_name = full_name)
+        login(request, user)
+        print('logged in')
+    context = {
+        "form" : form
+    }
+    return render(request, "accounts/login.html", context)
 
 
 #takes user's username and password and creates a token with user information

@@ -25,6 +25,7 @@ class CreateUser(graphene.Mutation):
 
 
 class Query(graphene.ObjectType):
+    me = graphene.Field(UserType)
     users = graphene.List(UserType)
     user = graphene.Field(UserType, email = graphene.String())
 

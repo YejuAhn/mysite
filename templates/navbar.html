@@ -6,13 +6,11 @@
 {% url 'products:product_list' as products_url %}
 {% url 'Blog:article_list' as articles_url %}
 {% url 'accounts:login' as login_url %}
-{% url 'accounts:logout' as logout_url %}
 {% url 'accounts:register' as register_url %}
 <nav>
     <ul>
       <li><a href="http://127.0.0.1:8000/">Home</a></li>
       <li><a href="http://127.0.0.1:8000/login">Login</a></li>
-      <li><a href="http://127.0.0.1:8000/logout">Logout</a></li>
       <li><a href="http://127.0.0.1:8000/about">About</a></li>
       <li><a href="http://127.0.0.1:8000/contact">Contact</a></li>
       <li><a href="http://127.0.0.1:8000/social">Social</a></li>
@@ -22,20 +20,6 @@
       <li><a href="http://127.0.0.1:8000/register">Register</a></li>
       <li><a href="http://127.0.0.1:3000/register">Refined products</a></li>
     </ul>
-
-<!--      {% if request.user.is_authenticated %}-->
-<!--      <li class="nav-item {% if request.path == logout_url %}active{% endif %}">-->
-<!--        <a class="nav-link" href="{{ logout_url }}">Logout</a>-->
-<!--      </li>-->
-<!--      {% else %}-->
-<!--      <li class = "nav-item {% if request.path == register_url %}active{%endif %}">-->
-<!--        <a class = "nav-link" href = "{{register_url}}">Register</a>-->
-<!--      </li>-->
-<!--      <li class = "nav-item {% if request.path == login_url %}active{%endif%}">-->
-<!--        <a class = "nav-link" href = "{{login_url}}">Login</a>-->
-<!--      </li>-->
-<!--      {% endif %}-->
-
 
 
 </nav>

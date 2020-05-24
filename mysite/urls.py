@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
-from django.urls import include, path, re_path
+from django.urls import include, path
 from django.views.decorators.csrf import csrf_exempt
 from graphene_django.views import GraphQLView
 
@@ -24,7 +24,7 @@ from mysite import settings
 from pages.views import home_view, contact_view, about_view, social_view
 from products.views import product_detail_view, product_create_view
 from accounts.views import register_page
-# from accounts.views import login_page
+from accounts.views import login_page
 from django.conf.urls.static import static
 from django.views.generic import TemplateView
 
@@ -40,8 +40,7 @@ urlpatterns = [
     path('Blog/', include('Blog.urls')),
     path('polls/', include('polls.urls')),
     path('register/', register_page),
-#     path('logout/', logout_page, name = 'auth_logout'),
-#     path('login/', login_page, name = 'auth_login'),
+    path('login/', login_page, name = 'auth_login'),
     url(r'^admin/', admin.site.urls),
     url(r'^api/products/', include("products.api.urls")),
     url(r'^api/articles/', include("Blog.api.urls")),

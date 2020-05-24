@@ -1,6 +1,9 @@
 from django import forms
 from django.contrib.auth.forms import ReadOnlyPasswordHashField
 from .models import User
+from django.core.exceptions import ValidationError
+from django.core.validators import validate_email
+
 
 class LoginForm(forms.Form):
     username = forms.EmailField(label = "Email")
@@ -8,27 +11,28 @@ class LoginForm(forms.Form):
 
 
 class RegisterForm(forms.ModelForm):
-    full_name = forms.CharField(widget = forms.Textarea)
+    email = forms.EmailField(label = "Email")
+    full_name = forms.CharField(widget= forms.Textarea)
 
     class Meta:
         model = User
         fields = ('email','full_name',)
 
-#     def clean_password2(self):
-#         # Check that the two password entries match
-#         password1 = self.cleaned_data.get("password")
-#         password2 = self.cleaned_data.get("password2")
-#         if password1 and password2 and password1 != password2:
-#             raise forms.ValidationError("Passwords don't match")
-#         return password2
-
     def save(self, commit = True):
-        user = super(RegisterForm, self).save(commit = False)
-#         user.set_password(self.cleaned_data["password"])
-        user.active = True
-        if commit:
-            user.save()
-        return user
+        user = super(RegisterForm, self).save(commit=False)
+        email = self.cleaned_data["email"]
+        try:
+            validate_email(email)
+        except ValidationError as e:
+            print("bad email, details:", e)
+        else:
+            print("good email")
+            user.email = self.cleaned_data["email"]
+            user.full_name = self.cleaned_data["full_name"]
+            user.active = True  # change to false if using email activation
+            if commit:
+                user.save()
+            return user
 
 
 class UserAdminCreationForm(forms.ModelForm):
