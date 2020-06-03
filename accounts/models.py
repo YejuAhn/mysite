@@ -60,7 +60,7 @@ class User(AbstractBaseUser):
     objects= UserManager()
 
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['full_name'] #email and passwords are required by default
+    REQUIRED_FIELDS = [] #email and passwords are required by default
 
     def get_full_name(self):
         return self.full_name

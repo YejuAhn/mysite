@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     #thirdparty
     'rest_framework',
+    'polymorphic',
+    'nested_admin',
     #own
     'products',
     "Blog",
