@@ -33,7 +33,6 @@ urlpatterns = [
     path('contact/', contact_view),
     path('about/', about_view),
     path('social/', social_view),
-    path('admin/', admin.site.urls),
     path('create/', product_create_view),
     path('product/', product_detail_view) ,
     path('products/', include('products.urls')),
@@ -43,7 +42,6 @@ urlpatterns = [
     path('login/', login_page, name = 'auth_login'),
     url(r'^admin/', admin.site.urls),
     url(r'^api/products/', include("products.api.urls")),
-    url(r'^api/articles/', include("Blog.api.urls")),
     url(r'^api/polls/', include("polls.api.urls")),
     url(r'^graphql$', csrf_exempt(GraphQLView.as_view(graphiql=True))),
 ]

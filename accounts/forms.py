@@ -1,9 +1,10 @@
 from django import forms
+from django.contrib.auth import login
 from django.contrib.auth.forms import ReadOnlyPasswordHashField
 from .models import User
 from django.core.exceptions import ValidationError
 from django.core.validators import validate_email
-
+from .backends import UserBackend
 
 class LoginForm(forms.Form):
     username = forms.EmailField(label = "Email")
@@ -21,17 +22,20 @@ class RegisterForm(forms.ModelForm):
     def save(self, commit = True):
         user = super(RegisterForm, self).save(commit=False)
         email = self.cleaned_data["email"]
+        full_name = self.cleaned_data["full_name"]
         try:
             validate_email(email)
         except ValidationError as e:
             print("bad email, details:", e)
         else:
             print("good email")
-            user.email = self.cleaned_data["email"]
-            user.full_name = self.cleaned_data["full_name"]
+            # user = UserBackend.authenticate(email=user.email, full_name= full_name)
+            user.email = email
+            user.full_name = full_name
             user.active = True  # change to false if using email activation
             if commit:
                 user.save()
+                # login(self.request, user)
             return user
 
 

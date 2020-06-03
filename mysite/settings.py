@@ -27,7 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -40,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     #thirdparty
     'rest_framework',
+    'import_export',
+    'nested_inline',
     #own
     'products',
     "Blog",
@@ -146,7 +147,7 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 #connecting react
 STATICFILES_DIRS = [

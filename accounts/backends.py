@@ -5,11 +5,12 @@ from .models import User
 
 #customizing authentication to work only with email and username
 class UserBackend(ModelBackend):
-    def authenticate(self, request, email = None, password = None, **kwargs):
+    def authenticate(self, request, email = None, full_name = None, password = None, **kwargs):
         email = email
+        full_name = full_name
         password = password
         try:
-            user = User.objects.get(email=email)
+            user = User.objects.get(email=email, full_name = full_name)
             if user.check_password(password):
                 return user
         except ObjectDoesNotExist:

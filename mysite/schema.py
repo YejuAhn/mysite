@@ -4,7 +4,6 @@ import accounts.schema
 import graphql_jwt
 from accounts.schema import ObtainJSONWebToken
 
-
 #this class will inherit from multiple Queries
 #as we begin to add more apps to our project
 class Query(polls.schema.Query, accounts.schema.Query ,graphene.ObjectType):
