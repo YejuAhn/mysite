@@ -10,9 +10,9 @@ class Question(models.Model):
     question_desc = models.TextField()
     whyweask = models.TextField()
 
+
     def __str__(self):
         return self.question_text
-
 
 ##############Answer################
 class Answer(PolymorphicModel):
@@ -28,7 +28,6 @@ class ShortAnswer(Answer):
 class MC(Answer):
     pass
 
-
 ##############Options###############
 class Option(models.Model):
     class Meta:
@@ -41,6 +40,7 @@ class Option(models.Model):
 class Choice(Option):
     card = models.ForeignKey(Card, on_delete= models.CASCADE)
     mc = models.ForeignKey(MC, on_delete=models.CASCADE)
+
 
 class StringInput(Option):
     stored_text = models.TextField()
